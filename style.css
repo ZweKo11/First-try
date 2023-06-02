@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+#bg{
+    width:100%;
+    height: 100vh;
+}
+.overlay{
+    height:100vh;
+    width:100%;
+    position:absolute;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    top:0;
+}
+.gallery{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+}
+.img-box{
+    height:400px;
+    width:100px;
+    margin:10px;
+    border-radius: 30px;
+    background: url(images/miji.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+.img-box:nth-child(2){
+    background: url(images/haerin.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(3){
+    background: url(images/hanni.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(4){
+    background: url(images/hyein.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(5){
+    background: url(images/danielle.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box h3{
+    position:absolute;
+    color:rgb(10, 5, 5);
+    bottom:0;
+    left:10px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+.img-box:hover{
+    width:250px;
+    cursor:pointer;
+}
+.img-box:hover h3{
+    opacity: 1;
+    bottom:20px;
+}
